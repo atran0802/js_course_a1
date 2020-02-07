@@ -47,6 +47,21 @@ const data = [
 // Instructions
 // Take the data above and display it as tiles on the page
 
+const container = document.querySelector('#data')
 
+let html = ''
+for (data of data) {
+  html = html + `
+    <div class="data">
+      <img src="${data.topic}"/>
+      <div class='overlay'>
+        <p>${data.price}</p>    
+      </div>
+    </div>
+  `
+}
 
+container.innerHTML = html
 
+let content = document.querySelector('#content')
+content.innerText = blog.content
