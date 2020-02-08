@@ -50,12 +50,12 @@ const data = [
 const container = document.querySelector('#content')
 
 let html = ''
-for (x of data) {
+for (tiles of data) {
   html = html + `
-    <div class='cards' style="background-color: ${x.color}">
-      <h3>${x.topic}</h3>
-      <h2>${x.title}</h2>    
-      <button>Read for ${x.price}</button>   
+    <div class='cards' style="background-color: ${tiles.color}">
+      <h3>${tiles.topic}</h3>
+      <h2>${tiles.title}</h2>    
+      <button>Read for ${tiles.price}</button>   
     </div>
   `
 }
