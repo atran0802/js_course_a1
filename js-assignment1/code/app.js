@@ -47,21 +47,17 @@ const data = [
 // Instructions
 // Take the data above and display it as tiles on the page
 
-const container = document.querySelector('#data')
+const container = document.querySelector('#content')
 
 let html = ''
-for (data of data) {
+for (x of data) {
   html = html + `
-    <div class="data">
-      <img src="${data.topic}"/>
-      <div class='overlay'>
-        <p>${data.price}</p>    
-      </div>
+    <div class='cards' style="background-color: ${x.color}">
+      <h3>${x.topic}</h3>
+      <h2>${x.title}</h2>    
+      <button>Read for ${x.price}</button>   
     </div>
   `
 }
 
 container.innerHTML = html
-
-let content = document.querySelector('#content')
-content.innerText = blog.content
