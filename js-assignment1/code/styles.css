@@ -56,3 +56,59 @@ nav .container ul li {
 CARDS
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Your styles go here */
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 50%;
+
+    margin: auto;
+}
+
+.cards {
+    width: 250px;
+    height: 250px;
+
+    margin: 1.2em;
+    padding: 1em;
+
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}    
+
+h3 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+button {
+    background: #fff;
+    font-weight: bold;
+
+    margin-top: 7.3em;
+    padding: 10px 15px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor:pointer;
+}
+
+@media (max-width: 600px) {
+    .card-row {
+      width: auto;
+    }
+    
+    .cards {
+      margin: auto;
+      margin-bottom: 1em;
+    }
+}
